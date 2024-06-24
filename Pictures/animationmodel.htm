@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STYLE>
+   .common {
+      
+      width:100px;
+      height: 100px;
+      background-color: blue;
+      margin-top: 10px;
+      animation: animation 10s 1s infinite normal;
+      position: relative;
+   }
+   @keyframes animation{
+    from{
+        left:0px;
+    }
+    to{
+        left:600px;
+    }
+   }
+   .ease{
+    animation-timing-function:ease;
+   }
+   .ease-in{
+    animation-timing-function:ease-in;
+   }
+   .ease-out{
+    animation-timing-function:ease-out;
+   }
+   .ease-in-out{
+    animation-timing-function:ease-in-out;
+   }
+   .linear  
+ </style>
+
+</head>
+<body>
+    
+<div class="common ease">EASE</div>
+<div class="common ease-in">EASE-IN</div>
+<div class="common ease-out">EASE-OUT</div>
+<div class="common ease-in-out">EASE-IN-OUT</div>
+<div class="common linear">LINEAR</div>
+
+
+
+</body>
+</html>

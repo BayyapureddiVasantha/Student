@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+background-color: aqua;
+  }
+  .container{
+    width:300px;
+    height:200px ;
+    background-color: chartreuse;
+    transition: all 3s;
+    border-radius: 10px;
+    overflow: auto;
+  }
+  .container:hover{
+     height: 350px;
+  }
+img{
+ width: 200px;
+ height: 200px;
+ border-radius: 30px;
+ position: relative;
+ left: 80px;
+ z-index: 3;
+ color: azure;
+}
+.container:hover .move{
+    transform: translateY(10px);
+}
+    </style>
+</head>
+<body>
+      <div class="container">
+       <img src="image6.jpg" alt="">
+     <div class="move">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni neque ea fugiat in nisi impedit esse quidem quibusdam, earum tempora quia aspernatur suscipit eveniet modi necessitatibus? Quae pariatur voluptatum fugit!</p>
+     </div>
+      </div> 
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   body{
+    display:grid;
+    grid-template-columns:100 100px 200px 100px;
+    grid-template-rows:100px 200px 100px 100px 100px 100px;
+   }
+   .comman{
+    font-size:30px;
+    text-align:center;
+    border: 3px solid red;
+    padding:90px;
+    
+   }
+   header{
+     background-color: blue;
+     grid-column-start: 1; 
+     grid-column-end: 4;     
+   }
+    aside{
+   background-color: chartreuse;
+   grid-row-start: 2;
+   grid-row-end: 5;
+} 
+
+   
+   article{
+    background-color: crimson;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+   }
+   #sec1{
+    background-color: deeppink;
+    grid-column-start: 3;
+    grid-column-end: 4;
+   }
+   main{
+    background-color: darkorchid;
+    grid-row-start: 3;
+    grid-row-end: 5;
+   }
+   #sec2{
+     background-color: forestgreen;
+     grid-column-start: 3;
+     grid-column-end: 4;
+   }
+   #sec3{
+    background-color:yellow;
+     grid-column-start: 3;
+     grid-column-end: 4;
+   }
+   footer{
+  background-color: orange;
+  grid-column-start: 1;
+  grid-column-end: 4;
+   }
+    </style>
+</head>
+<body>
+ <header class="comman">header</header>
+ <aside class="comman">A<br>S<br>I<br>D<br>E<br></aside>
+ <article class="comman">ARTICLE</article>
+ <section class="comman" id="sec1">SEC1</section>
+ <main class="comman">MAIN</main>
+ <section class="comman" id="sec2">SEC2</section>
+ <section class="comman" id="sec3">SEC3</section>
+ <footer class="comman">FOOTER</footer>
+
+</body>
+</html>

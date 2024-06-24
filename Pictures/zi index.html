@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .container{
+    width: 100%;
+    height: 400px;
+    background-color: aqua;
+    position: relative;
+      }
+      .common{
+   width:200px;
+   height:200px ;
+    /* background-color: blue;  */
+   margin-top: 20px;
+   position: absolute;
+
+      }
+      .div1{
+    background-color: chartreuse;
+    left:50px;
+    top:50px;
+    z-index:4;
+      }
+      .div2{
+        background-color: crimson;
+       top:100px;
+       left:100px;
+       z-index: 3;
+      }
+      .div3{
+
+        background-color: darkmagenta;
+        top:150px;
+        left:150px;
+        z-index:2;
+      }
+
+    </style>
+</head>
+<body>
+     
+    <div class="container"></div>
+    <div class="div1 common"></div> 
+    <div class="div2 common"></div>
+    <div class="div3 common"></div>
+</body>
+</html>

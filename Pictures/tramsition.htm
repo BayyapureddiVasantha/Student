@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .div1{
+     width:200px ;
+     height:200px ;
+     background-color:blueviolet ;
+     top: 50px;
+     left:50px;
+     /* transition-property:board-radius,backround-color, */
+     /* box-shadow; */
+     /* transition-propertity:all; */
+        /* transition-duration: 20s; */
+      transition: all 10s;
+     /* transition-delay: 10s; */
+    }
+.div1:hover{
+  border-radius:  100%;
+  background-color:darkmagenta;
+  box-shadow: 10px 10px 10px red,-10px 10px 10px greenyellow,10px -10px 10px pink,-10px -10px 10px black;
+
+}
+    </style>
+</head>
+<body>
+      <div class="div1"></div>
+</body>
+</html>

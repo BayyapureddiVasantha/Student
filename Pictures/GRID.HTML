@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: 100px  100px  10;
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas: "header header header" 
+            "aside sec1 sec1"
+            "aside main1 main2"
+            "aside sec2 sec2"
+            "footer footer footer";
+            grid-row:20px;
+            grid-column: 30px;
+        }
+ .comman{
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+ }
+ header{
+    background-color: blue;
+    grid-area: header;
+ }
+ aside{
+
+    background-color: chartreuse;
+    grid-area: aside;
+ }
+ #sec1{
+    background-color: yellow;
+    grid-area: sec1;
+ }
+ #main{
+    background-color: orchid;
+    grid-area: main;
+ 
+}
+#main2{
+    background-color: cornflowerblue;
+    grid-area: main2;
+}
+#sec2{
+    background-color: darkkhaki;
+    grid-area: sec2;
+}
+  footer{
+    background-color: gray;
+    grid-area: footer;
+  }
+    </style>
+</head>
+<body>
+    
+        <header class="comman">HEADER</header>    
+        <aside class="comman">A<br>S<br>I<br>D<br>E</aside>
+        <section id="sec1" class="comman" >SECtion1</section>
+        <main class="comman" id="main1">MAIN1</main>
+        <main class="comman"id="main2">MAIN2</main>
+        <section class="comman" id="sec2">SECtion2</section>
+        <footer class="comman">FOOTER</footer>
+</body>
+</html>

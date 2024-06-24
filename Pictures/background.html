@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   body{
+    background-image:conic-gradient(red 20deg 60deg,greenyellow 60deg 90deg , rgba(120,32,56) 120deg 180deg,rgb(32,64,57) 180deg 210deg , blue 210deg  250deg ,black);
+     background-size:100px 100px;
+     text-align: center;
+     
+   } 
+   .common{
+    top: 200px;
+  left:200px;
+  border: 3px solid white;
+  perspective:500px;
+  perspective-origin: top right; 
+  background-image:radial-gradient(#adadad 80%, yellow 30%);
+  position: relative;  
+
+   } 
+   .cube{
+   
+   top: 200px; 
+   left:200px;
+   width:40%;
+   height:150px;
+   position: relative;
+   border: 3px solid white;
+   perspective:900px;
+   perspective-origin: top right;
+  transform-style: preserve-3d; 
+   background-image:radial-gradient(#adadad 80%, yellow 30%); */
+  opacity:0.3;
+  position: absolute;
+   }
+   .font{
+    transform: translateX(150px);
+   }
+   .back{
+    transform: translateX(-150);
+   }
+   .top{
+    transform: rotateX(90deg)translateZ(150px);
+   }
+   .bottom{
+     transform: rotateX(90deg)translateZ(-150px);
+
+   }
+   .left{
+    transform: rotateY(90deg) translateZ(-150px);
+   }
+
+    </style>
+</head>
+<body>
+    
+</body>
+<div class="abc">
+  <div class="container">
+<div class="cube">
+<div class="common front"></div>
+<div class="common back"></div>
+<div class="common top"></div>
+<div class="common bottom"></div>
+<div class="comon left"></div>
+<div class="common right"></div>
+</div>
+  </div>
+</div>
+<
+</html>

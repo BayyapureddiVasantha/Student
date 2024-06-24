@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  .container{
+    width:500px;
+    height:500px;
+     border:3px solid; 
+    margin-left:200px;
+    margin-top:200px;
+     perspective:900px; 
+     perspective-origin:top right;
+
+
+}
+.cube{
+      width:300px;
+      min-height:300px;
+       position: relative;
+       transform-style: preserve-3d;
+}
+.common{
+ width:100%;
+ height:100%;
+ background-image: radial-gradient(#ff3498 80% ,rgb(13,125,237)20%);
+ position: absolute;
+ left:100px;
+ top:100px;
+  opacity: 0.3; 
+   border: 2px solid;
+
+} 
+.front{
+    transform: translateZ(150px);
+
+}
+.back{
+    transform: translateZ(-150px);
+}
+.top{
+  transform: rotateX(90deg) translateZ(150px);
+
+} 
+.bottom{
+
+    transform:rotateX(90deg)translateZ(-150px) ;
+}
+
+.left{
+
+ transform: rotateY(90deg)translateZ(-150px);
+
+}
+.right{
+
+    transform: rotateY(90deg)translateZ(150px);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="cube">
+        <div class="common front"></div>
+        <div class="common back"></div>
+        <div class="common top"></div>
+        <div class="common bottom"></div>
+        <div class="common left"></div>
+        <div class="common right"></div>
+    </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   /* ::before 
+   {  
+     content:"###"; 
+    }  */
+   h1::before{
+  content: "####";
+   }
+   #abc::before{
+    content: "@@@";
+   }
+   /* ::after
+
+    {
+    content: wel come;
+    color:red;
+   }   */
+  h1::after{
+    content: "@@@@";
+     color: red;
+  }
+p::first-letter{
+    font-weight:bold;
+    font-size: 60px;
+  
+}
+p::first-letter{
+   color: red;
+
+}
+   p::selection{
+    background-color: deeppink;
+    color: aqua;
+   }
+   input{
+    color: red;
+
+   }
+   input::placeholder{
+    color: red;
+   }
+   input::file-selector-button{
+    
+    color: blue;
+   }
+
+   ol::li{
+    color: red;
+   }
+   ol::li::marker{
+   color: blue;
+   }
+   ul::li::marker{
+    content: "#";
+    color: blue;
+   }
+    </style>
+</head>
+<body>
+      <h1> wel come to my world</h1> 
+      <h1 id="abc">hello guys</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quos reprehenderit nisi alias ipsum quia impedit asperiores hic maiores vero similique dolore doloribus quasi itaque tempore, eius suscipit mollitia soluta.
+      Minus laboriosam odio maxime doloremque blanditiis fugit ipsum reprehenderit labore aperiam, reiciendis dolores quo! Eius consequuntur porro natus sapiente nemo omnis at, architecto minima hic! Quae nulla qui ab fugit!
+
+      </p>
+      <hr>
+      <input type="text" placeholder="enter your name">
+      <hr>
+      <input type="file">
+      <hr>
+      <ol>
+   <li>html</li>
+   <li>css</li>
+   <li>sql</li>
+   <li>java script</li>
+      </ol>
+      <hr>
+      <ul>
+        <li>advance java</li>
+        <li>java programming</li>
+        <li>sql</li>
+        <li>java script</li>
+      </ul>
+</body>
+</html>
